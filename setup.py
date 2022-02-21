@@ -9,9 +9,12 @@ with open('requirements.txt', 'r') as file:
 print(f'Dependencies are: {requirements}')
 
 setup(
-    name="slr_helper",
-    version="0.1.0",
+    name='slr_helper',
+    version='0.1.0',
     package_dir={'': 'src'},
     packages=find_packages(where='src'),
-    install_requires=requirements
+    install_requires=requirements,
+    license='MIT',
+    author='makrei-p',
+    url='https://github.com/makrei-p/slr_helper'
 )
